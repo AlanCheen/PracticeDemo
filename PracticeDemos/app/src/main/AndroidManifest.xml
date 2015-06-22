@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity
+            android:name=".periscope.BezierActivity"
+            >
+        </activity>
+
+        <activity android:name=".base.BaseActivity"/>
     </application>
 
 </manifest>

@@ -1,37 +1,96 @@
 package yifeiyuan.practice.practicedemos;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+import yifeiyuan.practice.practicedemos.base.Practice;
+import yifeiyuan.practice.practicedemos.periscope.BezierActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    private ArrayList<Practice> mPractices;
+    private ListView mListView;
+    private Context mContext;
+    private MyAdapter mAdapter;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mContext = this;
+        initData();
+        mAdapter = new MyAdapter();
+        mListView = (ListView) findViewById(R.id.listview);
+        mListView.setAdapter(mAdapter);
+        mAdapter.notifyDataSetChanged();
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Practice practice = mPractices.get(position);
+                startActivity(practice.intent);
+            }
+        });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+
+    void initData(){
+
+        mPractices = new ArrayList<>();
+        mPractices.add(new Practice("Periscope点赞效果", new Intent(mContext, BezierActivity.class)));
+
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    private class MyAdapter extends BaseAdapter {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        @Override
+        public int getCount() {
+            return mPractices.size();
         }
 
-        return super.onOptionsItemSelected(item);
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+
+            ViewHolder viewHolder = null;
+            if (null == convertView) {
+                viewHolder =  new ViewHolder();
+                convertView = LayoutInflater.from(mContext).inflate(R.layout.mooc_item, null);
+                viewHolder.title = (TextView) convertView.findViewById(R.id.tv_title);
+                convertView.setTag(viewHolder);
+            }else {
+                viewHolder = (ViewHolder) convertView.getTag();
+            }
+            Practice mooc = mPractices.get(position);
+            viewHolder.title.setText(mooc.title);
+            return convertView;
+        }
+
+
+        class ViewHolder {
+            TextView title;
+        }
     }
+
+
 }
