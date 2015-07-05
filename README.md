@@ -15,11 +15,14 @@
 
 
 ##更新日志:
+
 2015.6.22:
+
 新建仓库
 新增 [一步一步教你实现Periscope点赞效果](http://www.jianshu.com/p/03fdcfd3ae9c) 示例代码
 
 2015.7.5
+
 1. 新增Reveal效果练习代码
 2. 新增欢迎界面,使用Kenburns效果
 3. 新增**compile 'com.android.support:design:22.2.0'** 的练习代码
