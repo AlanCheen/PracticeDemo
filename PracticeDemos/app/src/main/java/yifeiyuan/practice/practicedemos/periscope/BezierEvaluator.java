@@ -4,7 +4,7 @@ import android.animation.TypeEvaluator;
 import android.graphics.PointF;
 
 /**
- * Created by alanchen on 15/6/18.
+ * Created by yifeiyuan on 15/6/18.
  */
 public class BezierEvaluator implements TypeEvaluator<PointF> {
 

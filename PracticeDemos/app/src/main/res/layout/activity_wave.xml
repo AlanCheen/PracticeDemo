@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yifeiyuan.practice.practicedemos.wave.WaveActivity">
+
+
+    <Button
+        android:id="@+id/btn_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Wave"
+        />
+    <yifeiyuan.practice.practicedemos.wave.WaveView
+
+        android:id="@+id/wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

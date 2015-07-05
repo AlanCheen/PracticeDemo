@@ -25,7 +25,7 @@ import yifeiyuan.practice.practicedemos.R;
 
 
 /**
- * Created by alanchen on 15/6/19.
+ * Created by yifeiyuan on 15/6/19.
  */
 public class FavorLayout extends RelativeLayout{
 

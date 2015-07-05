@@ -10,40 +10,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a936817-6af9-417e-8205-25e05801bdcb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PracticeDemo.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/me/practice/practicedemo/ApplicationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/me/practice/practicedemo/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/mipmap-xxhdpi/pic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/blur/BlurActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/reveal/GoToRevealActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/reveal/RevealActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/reveal/RevealBackgroundView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/reveal/RevealView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_gauss_blur.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_go_to_reval.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_reval.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_gauss_blur.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_go_to_reval.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_message.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_reval.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/base/BaseActivity.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/base/BaseActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/BezierActivity.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/BezierActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/BezierEvaluator.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/BezierEvaluator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/FavorLayout.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/FavorLayout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/MainActivity.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_periscope.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_periscope.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/app.iml" afterPath="$PROJECT_DIR$/PracticeDemos/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/build.gradle" afterPath="$PROJECT_DIR$/PracticeDemos/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/styles.xml" />
     </list>
     <ignored path="PracticeDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +66,7 @@
     <leaf />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -120,10 +113,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane />
-      </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -135,7 +125,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,12 +346,12 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -366,8 +359,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />

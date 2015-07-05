@@ -1,6 +1,18 @@
 <resources>
-    <string name="app_name">PracticeDemos</string>
+    <string name="app_name">程序亦非猿</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_gauss_blur">GaussBlurActivity</string>
+    <string name="title_activity_reval">RevalActivity</string>
+    <string name="title_activity_go_to_reval">GoToRevalActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_wave">WaveActivity</string>
+
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string name="copyright">Copyright@程序亦非猿</string>
+
+
+
 </resources>
