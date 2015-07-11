@@ -23,6 +23,6 @@
 
 2015.7.5
 
-1. 新增Reveal效果练习代码(文章未写完..)
-2. 新增欢迎界面,使用Kenburns效果, 点击[这里](http://www.jianshu.com/p/f47d6f16aef7)看文章
+1. 新增Reveal效果练习代码,文章:[InstalMaterial学习笔记之Reveal效果](http://www.jianshu.com/p/35492fb2c269)
+2. 新增欢迎界面,使用Kenburns效果, 文章:[使用Ken Burns Effect制作App启动页](http://www.jianshu.com/p/f47d6f16aef7)
 3. 新增**compile 'com.android.support:design:22.2.0'** 的练习代码
