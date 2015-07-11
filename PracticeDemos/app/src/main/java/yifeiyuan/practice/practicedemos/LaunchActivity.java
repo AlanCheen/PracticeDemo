@@ -11,7 +11,12 @@ import com.flaviofaria.kenburnsview.Transition;
 import butterknife.InjectView;
 import yifeiyuan.practice.practicedemos.base.BaseActivity;
 
-public class WelcomeActivity extends BaseActivity {
+/**
+ *
+ *
+ *  项目地址: https://github.com/flavioarfaria/KenBurnsView
+ */
+public class LaunchActivity extends BaseActivity {
 
     @InjectView(R.id.iv_welcome)
     KenBurnsView mIvWelcome;
@@ -34,7 +39,7 @@ public class WelcomeActivity extends BaseActivity {
 
             @Override
             public void onTransitionEnd(Transition transition) {
-                startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
+                startActivity(new Intent(LaunchActivity.this,MainActivity.class));
                 finish();
             }
         });
@@ -42,7 +47,7 @@ public class WelcomeActivity extends BaseActivity {
         mTvPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
+                startActivity(new Intent(LaunchActivity.this,MainActivity.class));
                 finish();
             }
         });

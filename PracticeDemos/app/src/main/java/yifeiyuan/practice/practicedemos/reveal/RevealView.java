@@ -1,5 +1,7 @@
 package yifeiyuan.practice.practicedemos.reveal;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -46,32 +48,44 @@ public class RevealView extends View {
     private int radius;
 
     public void startReveal() {
-
-        //计算半径 sqrt 开平方,pow 计算x的n次方
-        // +1 为了避免强转丢失精度
-        int maxRadius = (int) (Math.sqrt(Math.pow(getHeight(), 2)+ getWidth() * getWidth()) + 1)/2;
-        ObjectAnimator revealAnimator = ObjectAnimator.ofInt(this, "radius", maxRadius).setDuration(300);
+        setVisibility(VISIBLE);
+        //计算对角线 sqrt 开平方,pow 计算x的n次方
+        int maxRadius = (int) (Math.sqrt(Math.pow(getHeight(), 2)+ Math.pow(getWidth(), 2)));
+        ObjectAnimator revealAnimator = ObjectAnimator.ofInt(this, "radius", 0,maxRadius).setDuration(300);
         revealAnimator.setInterpolator(new AccelerateInterpolator());
+        revealAnimator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                if (null != callback) {
+                    callback.onRevealEnd();
+                }
+            }
+        });
         revealAnimator.start();
     }
 
-    public void startReveal2() {
+    /**
+     *  可以做成loading效果~~
+     */
+    public void startLoading() {
 
         ObjectAnimator revealAnimator = ObjectAnimator.ofInt(this, "radius", 20, 50);
         revealAnimator.setRepeatMode(ValueAnimator.REVERSE);
         revealAnimator.setInterpolator(new LinearInterpolator());
         revealAnimator.setRepeatCount(ValueAnimator.INFINITE);
         revealAnimator.start();
+        //revealAnimator.cancel();
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        //原点是中心
         canvas.drawCircle(getWidth() / 2, getHeight() / 2, radius, mPaint);
     }
 
     public int getRadius() {
-        Log.d(TAG, "getRadius ");
+        Log.d(TAG, "getRadius ");//当属性动画不设置初始值时,get方法才会被调用
 
         return radius;
     }
@@ -79,8 +93,16 @@ public class RevealView extends View {
     public void setRadius(int radius) {
         this.radius = radius;
         Log.d(TAG, "setRadius "+radius);
-        //调用invalidate 之后 onDraw会被调用
+        //Notice 调用invalidate 之后 onDraw才会被调用
         invalidate();
+    }
+
+    public void setCallback(Callback callback) {
+        this.callback = callback;
+    }
+    private Callback callback;
+    public interface Callback{
+        void onRevealEnd();
     }
 
 }

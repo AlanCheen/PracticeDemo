@@ -16,4 +16,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+
+    <yifeiyuan.practice.practicedemos.wave.HeartView
+        android:id="@+id/hear_view"
+        android:layout_width="28dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/btn_wave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
 </RelativeLayout>

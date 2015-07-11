@@ -33,7 +33,7 @@ public class BlurActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 mIvBlur.buildDrawingCache();
-                fastBlur(mIvBlur.getDrawingCache(),10);
+                fastBlur(mIvBlur.getDrawingCache(),20);
             }
         });
     }

@@ -35,6 +35,8 @@ import yifeiyuan.practice.practicedemos.wave.WaveActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String TAG = "MainActivity";
+
     @InjectView(R.id.nav_view)
     NavigationView mNavView;
     @InjectView(R.id.listview)
@@ -94,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
         mNavView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
-
                 //todo
                 mDrawer.closeDrawer(GravityCompat.START);
                 return false;
@@ -121,6 +122,9 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.fab:
+
+//                Log.d(TAG,Log.getStackTraceString(new Throwable()));//简单暴力
+
                 Snackbar.make(mFab, "Snacke ssss......", Snackbar.LENGTH_SHORT).setAction("TODO", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

@@ -39,6 +39,13 @@ public class GoToRevealActivity extends BaseActivity {
 
     @Override
     protected void init(Bundle savedInstanceState) {
+        mVReveal.setCallback(new RevealView.Callback() {
+            @Override
+            public void onRevealEnd() {
+//                mVReveal.setVisibility(View.GONE);
+//                todo 其他事情
+            }
+        });
     }
 
     @OnClick({R.id.textView1, R.id.textView2, R.id.textView3, R.id.textView4, R.id.textView5})
@@ -63,13 +70,12 @@ public class GoToRevealActivity extends BaseActivity {
 
     @OnClick(R.id.btn_reveal)
     public void doReveal(){
-
         mVReveal.startReveal();
     }
 
     @OnClick(R.id.btn_reveal2)
     public void doReveal2(){
 
-        mVReveal.startReveal2();
+        mVReveal.startLoading();
     }
 }
