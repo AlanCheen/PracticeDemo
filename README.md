@@ -24,7 +24,7 @@
 - 2015.7.5
 
 1. 新增**Reveal效果**练习代码,文章:[InstalMaterial学习笔记之Reveal效果](http://www.jianshu.com/p/35492fb2c269)
-2. 新增欢迎界面,使用**Kenburns**效果, 文章:[使用Ken Burns Effect制作App启动页](http://www.jianshu.com/p/f47d6f16aef7)
+2. 新增欢迎界面,使用**Kenburns**效果, 文章:[使用KenBurnsEffect制作App启动页](http://www.jianshu.com/p/f47d6f16aef7)
 3. 新增**NavigationView** 的练习代码 compile 'com.android.support:design:22.2.0'
 
 - 2015.7.21
