@@ -24,17 +24,31 @@
             android:label="@string/title_activity_go_to_reval" />
         <activity
             android:name=".wave.WaveActivity"
-            android:label="@string/title_activity_wave"
-            />
+            android:label="@string/title_activity_wave" />
         <activity
             android:name=".LaunchActivity"
-            android:label="@string/app_name"
-            >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".drager.ViewDragerActivity"
+            android:label="@string/title_activity_view_drager" >
+        </activity>
+        <activity
+            android:name=".screenorientation.OrientationActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_activity_config"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            >
+        </activity>
+        <activity
+            android:name=".gesture.GestureActivity"
+            android:label="@string/title_activity_gesture" >
         </activity>
     </application>
 

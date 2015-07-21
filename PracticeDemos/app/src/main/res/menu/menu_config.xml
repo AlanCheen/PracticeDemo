@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="yifeiyuan.practice.practicedemos.screenorientation.OrientationActivity">
+    <item
+        android:id="@+id/ori_land"
+        android:orderInCategory="100"
+        android:title="Land"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ori_port"
+        android:orderInCategory="100"
+        android:title="Port"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ori_sensor"
+        android:orderInCategory="100"
+        android:title="Sensor"
+        app:showAsAction="always" />
+</menu>

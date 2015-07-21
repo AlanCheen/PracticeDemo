@@ -29,6 +29,8 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import yifeiyuan.practice.practicedemos.base.Practice;
 import yifeiyuan.practice.practicedemos.blur.BlurActivity;
+import yifeiyuan.practice.practicedemos.screenorientation.OrientationActivity;
+import yifeiyuan.practice.practicedemos.drager.ViewDragerActivity;
 import yifeiyuan.practice.practicedemos.periscope.BezierActivity;
 import yifeiyuan.practice.practicedemos.reveal.GoToRevealActivity;
 import yifeiyuan.practice.practicedemos.wave.WaveActivity;
@@ -74,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         mPractices.add(new Practice("Blur", new Intent(mContext, BlurActivity.class)));
         mPractices.add(new Practice("RevealEffect", new Intent(mContext, GoToRevealActivity.class)));
         mPractices.add(new Practice("Wave", new Intent(mContext, WaveActivity.class)));
+        mPractices.add(new Practice("ViewDragerHelper", new Intent(mContext, ViewDragerActivity.class)));
+        mPractices.add(new Practice("横竖屏切换", new Intent(mContext, OrientationActivity.class)));
 
     }
 
