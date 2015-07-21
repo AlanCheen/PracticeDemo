@@ -16,13 +16,18 @@
 
 ##更新日志:
 
-2015.6.22:
+- 2015.6.22:
 
 新建仓库
 新增 [一步一步教你实现Periscope点赞效果](http://www.jianshu.com/p/03fdcfd3ae9c) 示例代码
 
-2015.7.5
+- 2015.7.5
 
-1. 新增Reveal效果练习代码,文章:[InstalMaterial学习笔记之Reveal效果](http://www.jianshu.com/p/35492fb2c269)
-2. 新增欢迎界面,使用Kenburns效果, 文章:[使用Ken Burns Effect制作App启动页](http://www.jianshu.com/p/f47d6f16aef7)
-3. 新增**compile 'com.android.support:design:22.2.0'** 的练习代码
+1. 新增**Reveal效果**练习代码,文章:[InstalMaterial学习笔记之Reveal效果](http://www.jianshu.com/p/35492fb2c269)
+2. 新增欢迎界面,使用**Kenburns**效果, 文章:[使用Ken Burns Effect制作App启动页](http://www.jianshu.com/p/f47d6f16aef7)
+3. 新增**NavigationView** 的练习代码 compile 'com.android.support:design:22.2.0'
+
+- 2015.7.21
+
+1. 新增**ViewDragHelper** 练习代码
+2. 新增**横竖屏切换**练习代码
