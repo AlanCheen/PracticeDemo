@@ -166,6 +166,14 @@ public class DragerView extends LinearLayout {
                 return super.getOrderedChildIndex(index);
             }
 
+
+            /**
+             *  Notice  当想要拖动的子view 有点击事件的时候需要重写
+             *  Notice  想在水平上能拖动 getViewHorizontalDragRange 需要return 一个>0的数
+             *  Notice  同理 垂直:  getViewVerticalDragRange   也需要return 一个>0的数
+             * @param child
+             * @return
+             */
             @Override
             public int getViewHorizontalDragRange(View child) {
                 Log.d(TAG, "getViewHorizontalDragRange() called with " + "child = [" + child + "]");
