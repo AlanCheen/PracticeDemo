@@ -7,6 +7,7 @@
     tools:context="yifeiyuan.practice.practicedemos.drager.ViewDragerActivity"
     android:orientation="vertical"
     android:id="@+id/drager"
+    android:background="#eeeeee"
     >
 
     <TextView
@@ -21,7 +22,7 @@
 
     <TextView
         android:id="@+id/tv_two"
-        android:text="TextView2"
+        android:text="Release to back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -31,11 +32,32 @@
 
     <TextView
         android:id="@+id/tv_three"
-        android:text="TextView3"
+        android:text="Edge left touch to drag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:background="#ff0000"
         android:padding="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_four"
+        android:text="Edge right touch to drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="#ffff00"
+        android:padding="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_five"
+        android:text="The view clickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="#ff00ff"
+        android:padding="15dp"
+        android:clickable="true"
         />
 </yifeiyuan.practice.practicedemos.drager.DragerView>

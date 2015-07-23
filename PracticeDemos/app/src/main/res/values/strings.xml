@@ -20,6 +20,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_config">ConfigActivity</string>
     <string name="title_activity_gesture">GestureActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
 
 
 

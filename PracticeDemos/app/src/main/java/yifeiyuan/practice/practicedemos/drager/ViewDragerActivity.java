@@ -2,8 +2,10 @@ package yifeiyuan.practice.practicedemos.drager;
 
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.InjectView;
+import butterknife.OnClick;
 import yifeiyuan.practice.practicedemos.R;
 import yifeiyuan.practice.practicedemos.base.BaseActivity;
 
@@ -17,6 +19,10 @@ public class ViewDragerActivity extends BaseActivity {
     TextView mTvThree;
     @InjectView(R.id.drager)
     DragerView mDrager;
+    @InjectView(R.id.tv_four)
+    TextView mTvFour;
+    @InjectView(R.id.tv_five)
+    TextView mTvFive;
 
     @Override
     protected int getLayoutId() {
@@ -25,7 +31,12 @@ public class ViewDragerActivity extends BaseActivity {
 
     @Override
     protected void init(Bundle savedInstanceState) {
+    }
 
+    @OnClick((R.id.tv_five))
+    public void five(){
+        Toast.makeText(mContext,"onclick",Toast.LENGTH_SHORT).show();
     }
 
 }
+

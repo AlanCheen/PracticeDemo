@@ -146,6 +146,13 @@ public class OrientationActivity extends BaseActivity {
         public MyOrientationEventListener(Context context) {
             super(context);
         }
+        /**
+         * @param context
+         * @param rate  比率  可以调节灵敏度  SensorManager.SENSOR_DELAY_FASTEST 等
+         */
+        public MyOrientationEventListener(Context context, int rate) {
+            super(context, rate);
+        }
 
         @Override
         public void onOrientationChanged(int orientation) {
