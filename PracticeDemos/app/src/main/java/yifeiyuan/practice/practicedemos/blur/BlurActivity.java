@@ -29,16 +29,25 @@ public class BlurActivity extends BaseActivity {
 
     @Override
     protected void init(Bundle savedInstanceState) {
+
+
+        // FastBlur 用的时候 有些需要copy之后才行
+        // Bitmap bitmap = sentBitmap.copy(Bitmap.Config.ARGB_8888, true);
+
+
         mBtnStartBlur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mIvBlur.buildDrawingCache();
-                fastBlur(mIvBlur.getDrawingCache(),20);
+                Bitmap bitmap = FastBlur.doBlur(mIvBlur.getDrawingCache(), 20, true);
+                mIvBlur.setImageBitmap(bitmap);
+
             }
         });
     }
 
-    private void fastBlur(Bitmap sentBitmap, int radius){
+    private void blur(Bitmap sentBitmap, int radius){
+
         long start = System.currentTimeMillis();
 
         Bitmap bitmap = sentBitmap.copy(sentBitmap.getConfig(), true);

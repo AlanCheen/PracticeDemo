@@ -1,6 +1,8 @@
 package yifeiyuan.practice.practicedemos.drager;
 
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
+import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +25,10 @@ public class ViewDragerActivity extends BaseActivity {
     TextView mTvFour;
     @InjectView(R.id.tv_five)
     TextView mTvFive;
+    @InjectView(R.id.toolbar)
+    Toolbar mToolbar;
+    @InjectView(R.id.appbar)
+    AppBarLayout mAppbar;
 
     @Override
     protected int getLayoutId() {
@@ -34,8 +40,8 @@ public class ViewDragerActivity extends BaseActivity {
     }
 
     @OnClick((R.id.tv_five))
-    public void five(){
-        Toast.makeText(mContext,"onclick",Toast.LENGTH_SHORT).show();
+    public void five() {
+        Toast.makeText(mContext, "onclick", Toast.LENGTH_SHORT).show();
     }
 
 }
