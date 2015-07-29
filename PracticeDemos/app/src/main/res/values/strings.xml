@@ -23,6 +23,7 @@
     <string name="title_activity_web_view">WebViewActivity</string>
     <string name="title_activity_material">MaterialActivity</string>
     <string name="title_activity_media">MediaActivity</string>
+    <string name="title_activity_swipe_back">SwipeBackActivity</string>
 
 
 

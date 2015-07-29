@@ -1,26 +1,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <group android:checkableBehavior="single" >
-    <item
-        android:id="@+id/menu_home"
-        android:title="Home"
-        app:showAsAction="always"
-        android:icon="@mipmap/ic_launcher"
-        />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@mipmap/ic_dashboard"
+            android:title="Home"
+            app:showAsAction="always"
+            android:checked="true"
+            />
         <item
             android:id="@+id/menu_about"
-            android:title="About"
-            app:showAsAction="always"
             android:icon="@mipmap/ic_launcher"
-            />
+            android:title="About"
+            app:showAsAction="always" />
         <item
             android:id="@+id/menu_setting"
-            android:title="Setting"
-            app:showAsAction="always"
             android:icon="@mipmap/ic_launcher"
-            />
+            android:title="Setting"
+            app:showAsAction="always" />
+
     </group>
+
+    <item android:title="About Me">
+        <menu>
+            <item
+                android:id="@+id/github"
+                android:icon="@mipmap/github_circle"
+                android:title="Github"
+                app:showAsAction="always" />
+        </menu>
+    </item>
 </menu>

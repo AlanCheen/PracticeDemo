@@ -63,6 +63,10 @@
             android:name=".media.MediaActivity"
             android:label="@string/title_activity_media" >
         </activity>
+        <activity
+            android:name=".drager.SwipeBackActivity"
+            android:label="@string/title_activity_swipe_back" >
+        </activity>
     </application>
 
 </manifest>

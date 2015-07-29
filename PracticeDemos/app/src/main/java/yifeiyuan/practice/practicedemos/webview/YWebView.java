@@ -59,12 +59,18 @@ public class YWebView extends WebView {
         public void onProgressChanged(WebView view, int newProgress) {
             super.onProgressChanged(view, newProgress);
             Log.d(TAG, "onProgressChanged() called with " + "view = [" + view + "], newProgress = [" + newProgress + "]");
+            if (mCallback != null) {
+                mCallback.onProgressChanged(newProgress);
+            }
         }
 
         @Override
         public void onReceivedTitle(WebView view, String title) {
             super.onReceivedTitle(view, title);
             Log.d(TAG, "onReceivedTitle() called with " + "view = [" + view + "], title = [" + title + "]");
+            if (mCallback != null) {
+                mCallback.onReceivedTitle(title);
+            }
         }
 
         @Override
@@ -116,7 +122,13 @@ public class YWebView extends WebView {
         }
     }
 
-    public interface CallBack{
 
+    public void setCallback(Callback mCallback){
+        this.mCallback = mCallback;
+    }
+    private Callback mCallback;
+    public interface Callback{
+        void onReceivedTitle(String title);
+        void onProgressChanged(int newProgress);
     }
 }

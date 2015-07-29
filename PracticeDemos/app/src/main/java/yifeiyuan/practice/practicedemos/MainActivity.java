@@ -29,6 +29,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import yifeiyuan.practice.practicedemos.base.Practice;
 import yifeiyuan.practice.practicedemos.blur.BlurActivity;
+import yifeiyuan.practice.practicedemos.drager.SwipeBackActivity;
 import yifeiyuan.practice.practicedemos.materialsupport.MaterialActivity;
 import yifeiyuan.practice.practicedemos.screenorientation.OrientationActivity;
 import yifeiyuan.practice.practicedemos.drager.ViewDragerActivity;
@@ -79,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         mPractices.add(new Practice("RevealEffect", new Intent(mContext, GoToRevealActivity.class)));
         mPractices.add(new Practice("Wave", new Intent(mContext, WaveActivity.class)));
         mPractices.add(new Practice("ViewDragerHelper 基础", new Intent(mContext, ViewDragerActivity.class)));
+        mPractices.add(new Practice("SwipeBack", new Intent(mContext, SwipeBackActivity.class)));
         mPractices.add(new Practice("横竖屏切换", new Intent(mContext, OrientationActivity.class)));
         mPractices.add(new Practice("WebView基础", new Intent(mContext, WebViewActivity.class)));
         mPractices.add(new Practice("Material Support", new Intent(mContext, MaterialActivity.class)));
@@ -107,6 +109,12 @@ public class MainActivity extends AppCompatActivity {
                 menuItem.setChecked(true);
                 //todo
                 mDrawer.closeDrawer(GravityCompat.START);
+
+                switch (menuItem.getItemId()) {
+                    case R.id.github:
+                        startActivity(WebViewActivity.start(MainActivity.this,Const.URL_GITHUB));
+                        break;
+                }
                 return false;
             }
         });

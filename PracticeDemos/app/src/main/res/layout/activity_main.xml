@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/drawer"
+    android:fitsSystemWindows="true"
     >
 
 
@@ -22,6 +23,8 @@
         app:headerLayout="@layout/nav_header_layout"
         app:itemIconTint="#ff00ff"
         app:itemTextColor="#00ff00"
+        android:fitsSystemWindows="true"
+
         />
 
 </android.support.v4.widget.DrawerLayout>
