@@ -39,3 +39,4 @@
 
 - 2015.7.29
 1. 新增**TabLayout** 练习代码
+2. 新增[一步一步教你150行代码实现简书滑动返回效果](http://www.jianshu.com/writer#/notebooks/1198969/notes/1667070/preview) 示例代码
