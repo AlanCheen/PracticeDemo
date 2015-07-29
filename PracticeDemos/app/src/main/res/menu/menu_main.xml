@@ -3,11 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
+    <group android:checkableBehavior="single" >
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="test"
+        android:id="@+id/menu_home"
+        android:title="Home"
         app:showAsAction="always"
         android:icon="@mipmap/ic_launcher"
         />
+        <item
+            android:id="@+id/menu_about"
+            android:title="About"
+            app:showAsAction="always"
+            android:icon="@mipmap/ic_launcher"
+            />
+        <item
+            android:id="@+id/menu_setting"
+            android:title="Setting"
+            app:showAsAction="always"
+            android:icon="@mipmap/ic_launcher"
+            />
+    </group>
 </menu>

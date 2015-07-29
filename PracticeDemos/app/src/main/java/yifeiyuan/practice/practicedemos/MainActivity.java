@@ -29,6 +29,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import yifeiyuan.practice.practicedemos.base.Practice;
 import yifeiyuan.practice.practicedemos.blur.BlurActivity;
+import yifeiyuan.practice.practicedemos.materialsupport.MaterialActivity;
 import yifeiyuan.practice.practicedemos.screenorientation.OrientationActivity;
 import yifeiyuan.practice.practicedemos.drager.ViewDragerActivity;
 import yifeiyuan.practice.practicedemos.periscope.BezierActivity;
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         mPractices.add(new Practice("ViewDragerHelper 基础", new Intent(mContext, ViewDragerActivity.class)));
         mPractices.add(new Practice("横竖屏切换", new Intent(mContext, OrientationActivity.class)));
         mPractices.add(new Practice("WebView基础", new Intent(mContext, WebViewActivity.class)));
+        mPractices.add(new Practice("Material Support", new Intent(mContext, MaterialActivity.class)));
 
     }
 
@@ -102,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         mNavView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
+                menuItem.setChecked(true);
                 //todo
                 mDrawer.closeDrawer(GravityCompat.START);
                 return false;
@@ -129,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.fab:
 
-//                Log.d(TAG,Log.getStackTraceString(new Throwable()));//简单暴力
+//                Log.d(TAG,Log.getStackTraceString(new Throwable()));//简单暴力 打出堆栈
 
                 Snackbar.make(mFab, "Snacke ssss......", Snackbar.LENGTH_SHORT).setAction("TODO", new View.OnClickListener() {
                     @Override

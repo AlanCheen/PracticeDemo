@@ -46,7 +46,7 @@ public class BlurActivity extends BaseActivity {
         });
     }
 
-    private void blur(Bitmap sentBitmap, int radius){
+    private void RenderScriptblur(Bitmap sentBitmap, int radius){
 
         long start = System.currentTimeMillis();
 

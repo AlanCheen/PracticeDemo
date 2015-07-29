@@ -1,4 +1,4 @@
-package yifeiyuan.practice.practicedemos.gesture;
+package yifeiyuan.practice.practicedemos.media;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,18 +7,18 @@ import android.view.MenuItem;
 
 import yifeiyuan.practice.practicedemos.R;
 
-public class GestureActivity extends AppCompatActivity {
+public class MediaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gesture);
+        setContentView(R.layout.activity_media);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_gesture, menu);
+        getMenuInflater().inflate(R.menu.menu_media, menu);
         return true;
     }
 

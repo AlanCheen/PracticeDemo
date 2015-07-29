@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="yifeiyuan.practice.practicedemos" >
 
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -55,6 +54,14 @@
         <activity
             android:name=".webview.WebViewActivity"
             android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name=".materialsupport.MaterialActivity"
+            android:label="@string/title_activity_material" >
+        </activity>
+        <activity
+            android:name=".media.MediaActivity"
+            android:label="@string/title_activity_media" >
         </activity>
     </application>
 

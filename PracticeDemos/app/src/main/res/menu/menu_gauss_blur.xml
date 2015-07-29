@@ -2,6 +2,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="yifeiyuan.practice.practicedemos.blur.BlurActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+    <item android:id="@+id/menu_home" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>

@@ -26,6 +26,8 @@
     </android.support.design.widget.AppBarLayout>
 
     <!--todo recyclerview -->
+    <!--Notice 一定要加 app:layout_behavior="@string/appbar_scrolling_view_behavior" 不然ui显示不正确 -->
+
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
@@ -33,6 +35,8 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 
+
+    <!--bug比较多 要记得设置 borderWidth margin-->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
@@ -40,8 +44,10 @@
         app:fabSize="normal"
         android:src="@mipmap/ic_launcher"
         android:layout_gravity="bottom|right"
-        android:layout_marginBottom="0.1dp"
-        android:layout_marginRight="0.1dp"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:layout_marginRight="@dimen/fab_margin_right"
+        app:elevation="6dp"
+        app:borderWidth="0dp"
         />
         <!-- 如果用snackbar 不设置bottom right Fab不会自己回归位置-->
         <!--android:layout_marginBottom="0.1dp"-->

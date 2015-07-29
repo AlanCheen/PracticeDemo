@@ -30,9 +30,8 @@ public class OrientationActivity extends BaseActivity {
 
     }
 
-    //必须在manifests 里配置
-    // android:configChanges="screenSize|orientation"
-    // 才会有回调
+    //Notice 必须在manifests 里配置
+    //Notice android:configChanges="screenSize|orientation"  才会有回调
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         Log.d(TAG, "onConfigurationChanged() called with " + "newConfig = [" + newConfig + "]");

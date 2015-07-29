@@ -21,6 +21,8 @@
     <string name="title_activity_config">ConfigActivity</string>
     <string name="title_activity_gesture">GestureActivity</string>
     <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_material">MaterialActivity</string>
+    <string name="title_activity_media">MediaActivity</string>
 
 
 
