@@ -40,3 +40,12 @@
 - 2015.7.29
 1. 新增**TabLayout** 练习代码
 2. 新增[一步一步教你150行代码实现简书滑动返回效果](http://www.jianshu.com/writer#/notebooks/1198969/notes/1667070/preview) 示例代码
+
+- 2015.8.20
+1. 新增**FastBlur** 练习代码
+2. 新增**屏幕方向切换** 练习代码
+3. 新增**Webview** 练习代码
+4. 新增**TextInput** 练习代码
+5. 新增**RecyclerView** 练习代码
+6. 新增**CollapsingToolbarLayout等materia support控件** 练习代码
+7. 新增**ItemTouchHelper** 练习代码;[相应文章](http://yifeiyuan.me/2015/08/18/ItemTouchHelper%E4%B9%8BSwipeDissmiss/)
