@@ -6,9 +6,9 @@ import android.widget.Button;
 
 import butterknife.InjectView;
 import yifeiyuan.practice.practicedemos.R;
-import yifeiyuan.practice.practicedemos.base.BaseActivity;
+import yifeiyuan.practice.practicedemos.base.ToolbarActivity;
 
-public class BezierActivity extends BaseActivity {
+public class BezierActivity extends ToolbarActivity {
 
     @InjectView(R.id.btn_start_anim)
     Button mBtnStartAnim;
@@ -16,13 +16,9 @@ public class BezierActivity extends BaseActivity {
     FavorLayout mFavorLayout;
 
     @Override
-    protected int getLayoutId() {
-        return R.layout.activity_periscope;
-    }
-
-    @Override
-    protected void init(Bundle savedInstanceState) {
-
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_periscope);
         mBtnStartAnim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,8 +26,6 @@ public class BezierActivity extends BaseActivity {
                 mFavorLayout.addFavor();
             }
         });
-
-//        ViewAnimationUtils.createCircularReveal(mFavorLayout,0,0, 5, 10);
     }
 
 }

@@ -13,9 +13,9 @@ import android.widget.ImageView;
 
 import butterknife.InjectView;
 import yifeiyuan.practice.practicedemos.R;
-import yifeiyuan.practice.practicedemos.base.BaseActivity;
+import yifeiyuan.practice.practicedemos.base.ToolbarActivity;
 
-public class BlurActivity extends BaseActivity {
+public class FastBlurActivity extends ToolbarActivity {
 
     @InjectView(R.id.btn_start_blur)
     Button mBtnStartBlur;
@@ -23,17 +23,11 @@ public class BlurActivity extends BaseActivity {
     ImageView mIvBlur;
 
     @Override
-    protected int getLayoutId() {
-        return R.layout.activity_gauss_blur;
-    }
-
-    @Override
-    protected void init(Bundle savedInstanceState) {
-
-
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fast_blur);
         // FastBlur 用的时候 有些需要copy之后才行
         // Bitmap bitmap = sentBitmap.copy(Bitmap.Config.ARGB_8888, true);
-
 
         mBtnStartBlur.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,13 +40,18 @@ public class BlurActivity extends BaseActivity {
         });
     }
 
-    private void RenderScriptblur(Bitmap sentBitmap, int radius){
+    /**
+     * 有些手机不支持....so  不能用
+     * @param sentBitmap
+     * @param radius
+     */
+    private void RenderScriptblur(Bitmap sentBitmap, int radius) {
 
         long start = System.currentTimeMillis();
 
         Bitmap bitmap = sentBitmap.copy(sentBitmap.getConfig(), true);
 
-        final RenderScript rs = RenderScript.create(BlurActivity.this);
+        final RenderScript rs = RenderScript.create(FastBlurActivity.this);
         final Allocation input = Allocation.createFromBitmap(rs, sentBitmap, Allocation.MipmapControl.MIPMAP_NONE,
                 Allocation.USAGE_SCRIPT);
         final Allocation output = Allocation.createTyped(rs, input.getType());
@@ -65,9 +64,8 @@ public class BlurActivity extends BaseActivity {
         mIvBlur.setImageBitmap(bitmap);
         long end = System.currentTimeMillis();
 
-        Log.v(TAG,"fastblur time:"+(end-start));
+        Log.v(TAG, "fastblur time:" + (end - start));
     }
-
 
 
 }

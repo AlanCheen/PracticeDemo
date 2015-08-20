@@ -9,9 +9,9 @@ import android.widget.Toast;
 import butterknife.InjectView;
 import butterknife.OnClick;
 import yifeiyuan.practice.practicedemos.R;
-import yifeiyuan.practice.practicedemos.base.BaseActivity;
+import yifeiyuan.practice.practicedemos.base.ToolbarActivity;
 
-public class ViewDragerActivity extends BaseActivity {
+public class ViewDragerActivity extends ToolbarActivity {
 
     @InjectView(R.id.tv_one)
     TextView mTvOne;
@@ -31,12 +31,9 @@ public class ViewDragerActivity extends BaseActivity {
     AppBarLayout mAppbar;
 
     @Override
-    protected int getLayoutId() {
-        return R.layout.activity_view_drager;
-    }
-
-    @Override
-    protected void init(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_view_drager);
     }
 
     @OnClick((R.id.tv_five))

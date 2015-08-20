@@ -27,6 +27,17 @@
 
     <item android:title="About Me">
         <menu>
+
+            <item
+                android:id="@+id/jianshu"
+                android:icon="@mipmap/ic_dashboard"
+                android:title="Blog"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/sina"
+                android:icon="@mipmap/ic_dashboard"
+                android:title="Sina"
+                app:showAsAction="always" />
             <item
                 android:id="@+id/github"
                 android:icon="@mipmap/github_circle"

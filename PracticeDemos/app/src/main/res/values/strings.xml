@@ -24,6 +24,12 @@
     <string name="title_activity_material">MaterialActivity</string>
     <string name="title_activity_media">MediaActivity</string>
     <string name="title_activity_swipe_back">SwipeBackActivity</string>
+    <string name="title_activity_swipe_dismiss">SwipeDismissActivity</string>
+    <string name="title_activity_show_case">ShowCaseActivity</string>
+    <string name="title_activity_text_input">TextInputActivity</string>
+    <string name="title_activity_toolbar">ToolbarActivity</string>
+    <string name="title_activity_device_info_activty">DeviceInfoActivty</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 
 

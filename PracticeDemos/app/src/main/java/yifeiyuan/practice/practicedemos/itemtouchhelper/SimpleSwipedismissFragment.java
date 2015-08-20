@@ -1,16 +1,16 @@
-package yifeiyuan.practice.practicedemos.materialsupport;
+package yifeiyuan.practice.practicedemos.itemtouchhelper;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
+import android.support.v7.widget.helper.ItemTouchHelper;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,24 +18,20 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import yifeiyuan.practice.practicedemos.R;
-import yifeiyuan.practice.practicedemos.base.AboutMeActivity;
 import yifeiyuan.practice.practicedemos.base.BaseFragment;
 
 /**
+ *
  */
-public class ListFragment extends BaseFragment {
+public class SimpleSwipedismissFragment extends BaseFragment {
 
-    @InjectView(R.id.rv_list)
+    @InjectView(R.id.rv)
     RecyclerView mRvList;
-
-    @InjectView(R.id.swipe_refresh)
-    SwipeRefreshLayout mSwipeRefresh;
-
     private ListAdapter mAdapter;
     private List<String> mData;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mRootView = inflater.inflate(R.layout.fragment_list, container, false);
+        mRootView = inflater.inflate(R.layout.simple_rv, container, false);
         ButterKnife.inject(this, mRootView);
         return mRootView;
     }
@@ -46,25 +42,32 @@ public class ListFragment extends BaseFragment {
         mAdapter = new ListAdapter(getActivity(),mData);
 
         for (int i = 0; i < 20; i++) {
-            mData.add("~~"+i);
+            mData.add("滑动拆散情侣:"+i+" 号");
         }
 
         mRvList.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         mRvList.setAdapter(mAdapter);
-        mSwipeRefresh.setColorSchemeResources(R.color.primary, R.color.accent, R.color.primary_dark);
-        mSwipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+
+
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
+
             @Override
-            public void onRefresh() {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (null != mSwipeRefresh) {
-                            mSwipeRefresh.setRefreshing(false);
-                        }
-                    }
-                }, 3000);
+            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
+                Log.d(TAG, "onSwiped() called with " + "viewHolder = [" + viewHolder + "], direction = [" + direction + "]");
+                int position = viewHolder.getAdapterPosition();
+                mData.remove(position);
+                mAdapter.notifyItemRemoved(position);
+                Toast.makeText(getActivity(), "拆散的position:"+position, Toast.LENGTH_SHORT).show();
             }
-        });
+
+            @Override
+            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+                Log.d(TAG, "onMove() called with " + "recyclerView = [" + recyclerView + "], viewHolder = [" + viewHolder + "], target = [" + target + "]");
+                return false;
+            }
+
+        }).attachToRecyclerView(mRvList);
+
     }
 
     @Override
@@ -74,48 +77,44 @@ public class ListFragment extends BaseFragment {
     }
 
     public static class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> implements View.OnClickListener{
-
-        private final TypedValue mTypedValue = new TypedValue();
-        private int mBackground;
         private Context mContext;
         private List<String>mDatas;
         public ListAdapter(Context context,List<String> data){
-            mContext = context;
             mDatas= data;
-            //android.graphics.drawable.StateListDrawable cannot be cast to android.support.v7.widget.RoundRectDrawableWithShadow
-//            context.getTheme().resolveAttribute(R.attr.selectableItemBackground, mTypedValue, true);
-//            mBackground = mTypedValue.resourceId;
-
+            mContext = context;
         }
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.material_list_item, parent, false);
-//            view.setBackgroundResource(mBackground);
-            view.setOnClickListener(this);
             return new ViewHolder(view);
         }
 
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
+            holder.text.setText(mDatas.get(position));
 
+            holder.text.setTag(position);
+            holder.text.setOnClickListener(this);
         }
 
         @Override
         public int getItemCount() {
             return mDatas.size();
-//            return 20;
         }
 
         @Override
         public void onClick(View v) {
-            mContext.startActivity(new Intent(mContext, AboutMeActivity.class));
+            TextView tv = (TextView) v;
+            Toast.makeText(mContext, tv.getText()+";;"+tv.getTag(), Toast.LENGTH_SHORT).show();
         }
 
         public static class ViewHolder extends RecyclerView.ViewHolder{
 
+            TextView text;
             public ViewHolder(View view){
                 super(view);
+                text = (TextView) view.findViewById(R.id.iv_item);
             }
         }
 

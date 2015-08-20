@@ -27,15 +27,18 @@ import java.util.ArrayList;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
+import yifeiyuan.practice.practicedemos.base.AboutMeActivity;
 import yifeiyuan.practice.practicedemos.base.Practice;
-import yifeiyuan.practice.practicedemos.blur.BlurActivity;
+import yifeiyuan.practice.practicedemos.blur.FastBlurActivity;
 import yifeiyuan.practice.practicedemos.drager.SwipeBackActivity;
-import yifeiyuan.practice.practicedemos.materialsupport.MaterialActivity;
-import yifeiyuan.practice.practicedemos.screenorientation.OrientationActivity;
 import yifeiyuan.practice.practicedemos.drager.ViewDragerActivity;
+import yifeiyuan.practice.practicedemos.info.DeviceInfoActivty;
+import yifeiyuan.practice.practicedemos.materialsupport.MaterialActivity;
+import yifeiyuan.practice.practicedemos.materialsupport.TextInputActivity;
 import yifeiyuan.practice.practicedemos.periscope.BezierActivity;
 import yifeiyuan.practice.practicedemos.reveal.GoToRevealActivity;
-import yifeiyuan.practice.practicedemos.wave.WaveActivity;
+import yifeiyuan.practice.practicedemos.screenorientation.OrientationActivity;
+import yifeiyuan.practice.practicedemos.itemtouchhelper.TouchHelperActivity;
 import yifeiyuan.practice.practicedemos.webview.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -66,28 +69,30 @@ public class MainActivity extends AppCompatActivity {
 
         mContext = this;
         initData();
-        setUpListView();
-        setUpToolbar();
-        setUpDrawer();
+        setupListView();
+        setupToolbar();
+        setupDrawer();
     }
-
 
     private void initData() {
 
         mPractices = new ArrayList<>();
         mPractices.add(new Practice("Periscope点赞效果", new Intent(mContext, BezierActivity.class)));
-        mPractices.add(new Practice("Blur", new Intent(mContext, BlurActivity.class)));
+        mPractices.add(new Practice("Fastblur", new Intent(mContext, FastBlurActivity.class)));
         mPractices.add(new Practice("RevealEffect", new Intent(mContext, GoToRevealActivity.class)));
-        mPractices.add(new Practice("Wave", new Intent(mContext, WaveActivity.class)));
-        mPractices.add(new Practice("ViewDragerHelper 基础", new Intent(mContext, ViewDragerActivity.class)));
-        mPractices.add(new Practice("SwipeBack", new Intent(mContext, SwipeBackActivity.class)));
+//        mPractices.add(new Practice("Wave", new Intent(mContext, WaveActivity.class)));
+        mPractices.add(new Practice("ViewDragerHelper之基础", new Intent(mContext, ViewDragerActivity.class)));
+        mPractices.add(new Practice("ViewDragerHelper之SwipeBack", new Intent(mContext, SwipeBackActivity.class)));
+        mPractices.add(new Practice("SwipeDismiss", new Intent(mContext, TouchHelperActivity.class)));
         mPractices.add(new Practice("横竖屏切换", new Intent(mContext, OrientationActivity.class)));
         mPractices.add(new Practice("WebView基础", new Intent(mContext, WebViewActivity.class)));
         mPractices.add(new Practice("Material Support", new Intent(mContext, MaterialActivity.class)));
+        mPractices.add(new Practice("TextInput", new Intent(mContext, TextInputActivity.class)));
+        mPractices.add(new Practice("设备信息", new Intent(mContext, DeviceInfoActivty.class)));
 
     }
 
-    private void setUpListView(){
+    private void setupListView(){
         mAdapter = new MyAdapter();
         mListView.setAdapter(mAdapter);
         mAdapter.notifyDataSetChanged();
@@ -101,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void setUpDrawer(){
+    private void setupDrawer(){
 
         mNavView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -113,6 +118,18 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.github:
                         startActivity(WebViewActivity.start(MainActivity.this,Const.URL_GITHUB));
+                        break;
+
+                    case R.id.jianshu:
+                        startActivity(WebViewActivity.start(MainActivity.this,Const.URL_JIANSHU));
+                        break;
+
+                    case R.id.sina:
+                        startActivity(WebViewActivity.start(MainActivity.this,Const.URL_SINA));
+                        break;
+
+                    case R.id.menu_about:
+                        startActivity(AboutMeActivity.start(MainActivity.this));
                         break;
                 }
                 return false;
@@ -126,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         mDrawer.setDrawerListener(mDrawerToggle);
     }
 
-    private void setUpToolbar(){
+    private void setupToolbar(){
         setSupportActionBar(mToolbar);
         //似乎没什么用 不设置也没有关系(或许跟ActionBarDrawerToggle 有关)
 //        getSupportActionBar().setHomeButtonEnabled(true);
@@ -187,8 +204,7 @@ public class MainActivity extends AppCompatActivity {
             return convertView;
         }
 
-
-        class ViewHolder {
+         class ViewHolder {
             TextView title;
         }
     }

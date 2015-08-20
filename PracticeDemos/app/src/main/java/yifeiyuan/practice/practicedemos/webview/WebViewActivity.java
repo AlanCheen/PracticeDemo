@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import butterknife.InjectView;
+import yifeiyuan.practice.practicedemos.Const;
 import yifeiyuan.practice.practicedemos.R;
 import yifeiyuan.practice.practicedemos.base.BaseActivity;
 import yifeiyuan.practice.yutils.HttpUtils;
@@ -31,14 +32,17 @@ public class WebViewActivity extends BaseActivity {
         return intent;
     }
 
-    String url = "http://www.baidu.com";
+    String url = Const.URL_GITHUB;
     @Override
     protected void init(Bundle savedInstanceState) {
 
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        url = getIntent().getStringExtra("Url");
+        Bundle bundle = getIntent().getExtras();
+        if (null != bundle) {
+            url = bundle.getString("Url");
+        }
         mWebview.loadUrl(url);
 
         mWebview.setCallback(new YWebView.Callback() {

@@ -144,7 +144,6 @@ public class MaterialActivity extends BaseActivity {
 
         /**
          * 这个决定了 tablayout 的显示的标题
-         *
          * @param position
          * @return
          */

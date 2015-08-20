@@ -13,6 +13,9 @@
     <include
         layout="@layout/content_layout"/>
 
+    <!--可以着色-->
+    <!--app:itemIconTint="#ff00ff"-->
+    <!--app:itemTextColor="#00ff00"-->
     <android.support.design.widget.NavigationView
 
         android:id="@+id/nav_view"
@@ -21,10 +24,7 @@
         android:layout_gravity="start"
         app:menu="@menu/menu_main"
         app:headerLayout="@layout/nav_header_layout"
-        app:itemIconTint="#ff00ff"
-        app:itemTextColor="#00ff00"
         android:fitsSystemWindows="true"
-
         />
 
 </android.support.v4.widget.DrawerLayout>

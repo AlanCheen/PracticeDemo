@@ -12,10 +12,8 @@ import java.io.IOException;
  */
 public class HttpUtils {
 
-    public static final String TAG = "HttpUtils";
-
     /**
-     * 可以提前获取网页的 statusCode
+     * 可以提前获取网页的 statusCode 如200 404
      * Notice 需要异步
      * @param url 网页的url
      * @return   statusCode 默认-1
