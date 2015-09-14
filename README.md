@@ -59,7 +59,7 @@
 6. 新增**Rx基础**练习
 7. 新增**RxOperators**练习
 
-PS: 距离上次更新有一个月,很明显这次练习量变少了,那么我干什么去了呢?
-一方面比较忙,另外一方面,开源了两个项目,需要继续开发.
-1. 用于捕获崩溃的[CrashCatcher](https://github.com/AlanCheen/CrashCatcher)
+PS: 距离上次更新有一个月,很明显这次练习量变少了,那么我干什么去了呢?  
+一方面比较忙,另外一方面,开源了两个项目,需要继续开发.  
+1. 用于捕获崩溃的[CrashCatcher](https://github.com/AlanCheen/CrashCatcher)  
 2. 基于Gank.io的第三方妹子客户端[GMei](https://github.com/AlanCheen/GMei)
