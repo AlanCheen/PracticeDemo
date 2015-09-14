@@ -19,7 +19,7 @@ import yifeiyuan.practice.practicedemos.R;
  * 统一:
  * 设置toolbar
  * 设置title
- * 处理坐上返回按钮事件
+ * 处理左上返回按钮事件
  */
 public class ToolbarActivity extends AppCompatActivity {
 

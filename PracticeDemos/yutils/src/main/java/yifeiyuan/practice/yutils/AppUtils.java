@@ -27,7 +27,6 @@ public class AppUtils {
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
-
         return versionName;
 
     }

@@ -3,12 +3,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="yifeiyuan.practice.practicedemos.drager.ViewDragerActivity"
+    tools:context="yifeiyuan.practice.practicedemos.viewdrager.ViewDragerActivity"
     >
 
     <include layout="@layout/appbar_cons_toolbar" />
 
-    <yifeiyuan.practice.practicedemos.drager.DragerView
+    <yifeiyuan.practice.practicedemos.viewdrager.DragerView
         android:id="@+id/drager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -65,5 +65,5 @@
             android:padding="15dp"
             android:text="The view clickable"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-    </yifeiyuan.practice.practicedemos.drager.DragerView>
+    </yifeiyuan.practice.practicedemos.viewdrager.DragerView>
 </LinearLayout>

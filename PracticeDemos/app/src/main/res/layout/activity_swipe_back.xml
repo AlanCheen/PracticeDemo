@@ -1,9 +1,9 @@
-<yifeiyuan.practice.practicedemos.drager.SwipeBackFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<yifeiyuan.practice.practicedemos.viewdrager.SwipeBackFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/swipe_back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="yifeiyuan.practice.practicedemos.drager.SwipeBackActivity">
+    tools:context="yifeiyuan.practice.practicedemos.viewdrager.SwipeBackActivity">
 
     <TextView
         android:layout_width="40dp"
@@ -19,4 +19,4 @@
         android:background="#ff00ff"
         />
 
-</yifeiyuan.practice.practicedemos.drager.SwipeBackFrameLayout>
+</yifeiyuan.practice.practicedemos.viewdrager.SwipeBackFrameLayout>

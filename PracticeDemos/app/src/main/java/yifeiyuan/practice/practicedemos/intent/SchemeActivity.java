@@ -1,37 +1,29 @@
-package yifeiyuan.practice.practicedemos.drager;
+package yifeiyuan.practice.practicedemos.intent;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import butterknife.ButterKnife;
-import butterknife.InjectView;
 import yifeiyuan.practice.practicedemos.R;
 
-public class SwipeBackActivity extends AppCompatActivity {
-
-    @InjectView(R.id.swipe_back)
-    SwipeBackFrameLayout mSwipeBack;
+public class SchemeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_swipe_back);
-        ButterKnife.inject(this);
-        mSwipeBack.setCallback(new SwipeBackFrameLayout.Callback() {
-            @Override
-            public void onShouldFinish() {
-                finish();
-                overridePendingTransition(R.anim.no_anim, R.anim.out_to_right);
-            }
+        setContentView(R.layout.activity_scheme);
+
+        findViewById(R.id.id_tv_scheme).setOnClickListener(v->{
+
+
         });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_swipe_back, menu);
+        getMenuInflater().inflate(R.menu.menu_scheme, menu);
         return true;
     }
 

@@ -1,95 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="yifeiyuan.practice.practicedemos" >
+<manifest package="yifeiyuan.practice.practicedemos"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
 
     <application
+        android:name=".App"
+        xmlns:tools="http://schemas.android.com/tools"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,theme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
         </activity>
-        <activity android:name=".periscope.BezierActivity" />
-        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".periscope.BezierActivity"/>
+        <activity android:name=".base.BaseActivity"/>
         <activity
-            android:name=".blur.FastBlurActivity"
-            android:label="@string/title_activity_gauss_blur" />
+            android:name=".fastblur.FastBlurActivity"
+            android:label="@string/title_activity_gauss_blur"/>
         <activity
             android:name=".reveal.RevealActivity"
-            android:label="@string/title_activity_reval" />
+            android:label="@string/title_activity_reval"/>
         <activity
             android:name=".reveal.GoToRevealActivity"
-            android:label="@string/title_activity_go_to_reval" />
+            android:label="@string/title_activity_go_to_reval"/>
         <activity
             android:name=".wave.WaveActivity"
-            android:label="@string/title_activity_wave" />
+            android:label="@string/title_activity_wave"/>
         <activity
             android:name=".LaunchActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".drager.ViewDragerActivity"
-            android:label="@string/title_activity_view_drager" >
+            android:name=".viewdrager.ViewDragerActivity"
+            android:label="@string/title_activity_view_drager">
         </activity>
         <activity
             android:name=".screenorientation.OrientationActivity"
             android:configChanges="screenSize|orientation"
             android:label="@string/title_activity_config"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
-        </activity>
-        <activity
-            android:name=".gesture.GestureActivity"
-            android:label="@string/title_activity_gesture" >
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".webview.WebViewActivity"
-            android:label="@string/title_activity_web_view" >
+            android:label="@string/title_activity_web_view">
         </activity>
         <activity
             android:name=".materialsupport.MaterialActivity"
-            android:label="@string/title_activity_material" >
+            android:label="@string/title_activity_material">
         </activity>
         <activity
-            android:name=".media.MediaActivity"
-            android:label="@string/title_activity_media" >
-        </activity>
-        <activity
-            android:name=".drager.SwipeBackActivity"
-            android:label="@string/title_activity_swipe_back" >
+            android:name=".viewdrager.SwipeBackActivity"
+            android:label="@string/title_activity_swipe_back">
         </activity>
         <activity
             android:name=".itemtouchhelper.TouchHelperActivity"
-            android:label="@string/title_activity_swipe_dismiss" >
+            android:label="@string/title_activity_swipe_dismiss">
         </activity>
         <activity
             android:name=".base.AboutMeActivity"
-            android:label="@string/title_activity_show_case" >
+            android:label="@string/title_activity_show_case">
         </activity>
         <activity
             android:name=".materialsupport.TextInputActivity"
-            android:label="@string/title_activity_text_input" >
+            android:label="@string/title_activity_text_input">
         </activity>
         <activity
             android:name=".base.ToolbarActivity"
-            android:label="@string/title_activity_toolbar" >
+            android:label="@string/title_activity_toolbar">
         </activity>
         <activity
             android:name=".info.DeviceInfoActivty"
-            android:label="@string/title_activity_device_info_activty" >
+            android:label="@string/title_activity_device_info_activty">
         </activity>
+        <activity
+            android:name=".intent.IntentActivity"
+            android:label="@string/title_activity_intent_one">
+        </activity>
+        <activity
+            android:name=".intent.SchemeHPActivity"
+            android:label="@string/title_activity_intent_two">
+
+            <!-- 如果都指定了,那么就需要完全匹配 scheme://host:port -->
+            <!-- yifeiyuan://practice.practicedemos:1314 -->
+            <intent-filter>
+                <data
+                    android:host="practice.practicedemos"
+                    android:port="1314"
+                    android:scheme="yifeiyuan"/>
+
+                <action android:name="yifeiyuan.practice.test"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intent.SchemeActivity"
+            android:label="@string/title_activity_scheme">
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW"/>
+                <data
+                    android:scheme="yifeiyuan"
+                    />
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--<category android:name="android.intent.category.APP_BROWSER"/>-->
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name=".broadcast.AppReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

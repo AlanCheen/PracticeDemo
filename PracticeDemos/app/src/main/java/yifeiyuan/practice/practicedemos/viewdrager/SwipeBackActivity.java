@@ -1,29 +1,37 @@
-package yifeiyuan.practice.practicedemos.materialsupport;
+package yifeiyuan.practice.practicedemos.viewdrager;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 import yifeiyuan.practice.practicedemos.R;
-import yifeiyuan.practice.practicedemos.base.ToolbarActivity;
 
-public class TextInputActivity extends ToolbarActivity {
+public class SwipeBackActivity extends AppCompatActivity {
 
+    @InjectView(R.id.swipe_back)
+    SwipeBackFrameLayout mSwipeBack;
 
-    //java.lang.IllegalArgumentException: We already have an EditText, can only have one
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text_input);
-
-        new Thread(()-> System.out.printf("")).start();
-
+        setContentView(R.layout.activity_swipe_back);
+        ButterKnife.inject(this);
+        mSwipeBack.setCallback(new SwipeBackFrameLayout.Callback() {
+            @Override
+            public void onShouldFinish() {
+                finish();
+                overridePendingTransition(R.anim.no_anim, R.anim.out_to_right);
+            }
+        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_text_input, menu);
+        getMenuInflater().inflate(R.menu.menu_swipe_back, menu);
         return true;
     }
 

@@ -29,10 +29,12 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import yifeiyuan.practice.practicedemos.base.AboutMeActivity;
 import yifeiyuan.practice.practicedemos.base.Practice;
-import yifeiyuan.practice.practicedemos.blur.FastBlurActivity;
-import yifeiyuan.practice.practicedemos.drager.SwipeBackActivity;
-import yifeiyuan.practice.practicedemos.drager.ViewDragerActivity;
+import yifeiyuan.practice.practicedemos.fastblur.FastBlurActivity;
+import yifeiyuan.practice.practicedemos.viewdrager.SwipeBackActivity;
+import yifeiyuan.practice.practicedemos.viewdrager.ViewDragerActivity;
 import yifeiyuan.practice.practicedemos.info.DeviceInfoActivty;
+import yifeiyuan.practice.practicedemos.intent.IntentActivity;
+import yifeiyuan.practice.practicedemos.jni.HelloJni;
 import yifeiyuan.practice.practicedemos.materialsupport.MaterialActivity;
 import yifeiyuan.practice.practicedemos.materialsupport.TextInputActivity;
 import yifeiyuan.practice.practicedemos.periscope.BezierActivity;
@@ -89,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         mPractices.add(new Practice("Material Support", new Intent(mContext, MaterialActivity.class)));
         mPractices.add(new Practice("TextInput", new Intent(mContext, TextInputActivity.class)));
         mPractices.add(new Practice("设备信息", new Intent(mContext, DeviceInfoActivty.class)));
+        mPractices.add(new Practice("Android基础之Intent", new Intent(mContext, IntentActivity.class)));
 
     }
 
@@ -159,7 +162,8 @@ public class MainActivity extends AppCompatActivity {
 
 //                Log.d(TAG,Log.getStackTraceString(new Throwable()));//简单暴力 打出堆栈
 
-                Snackbar.make(mFab, "Snacke ssss......", Snackbar.LENGTH_SHORT).setAction("TODO", new View.OnClickListener() {
+                String jni = HelloJni.helloJni();
+                Snackbar.make(mFab, jni, Snackbar.LENGTH_SHORT).setAction("TODO", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Toast.makeText(mContext, "TODO", Toast.LENGTH_SHORT).show();
@@ -167,6 +171,8 @@ public class MainActivity extends AppCompatActivity {
                 }).show();
                 break;
         }
+
+//        throw new IllegalArgumentException("Hello crashcatcher");
     }
 
 

@@ -1,4 +1,4 @@
-package yifeiyuan.practice.practicedemos.blur;
+package yifeiyuan.practice.practicedemos.fastblur;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.renderscript.Element;
 import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -29,19 +28,17 @@ public class FastBlurActivity extends ToolbarActivity {
         // FastBlur 用的时候 有些需要copy之后才行
         // Bitmap bitmap = sentBitmap.copy(Bitmap.Config.ARGB_8888, true);
 
-        mBtnStartBlur.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mIvBlur.buildDrawingCache();
-                Bitmap bitmap = FastBlur.doBlur(mIvBlur.getDrawingCache(), 20, true);
-                mIvBlur.setImageBitmap(bitmap);
+        mBtnStartBlur.setOnClickListener(v -> {
+            mIvBlur.buildDrawingCache();
+            Bitmap bitmap = FastBlur.doBlur(mIvBlur.getDrawingCache(), 20, true);
+            mIvBlur.setImageBitmap(bitmap);
 
-            }
         });
     }
 
     /**
      * 有些手机不支持....so  不能用
+     *
      * @param sentBitmap
      * @param radius
      */

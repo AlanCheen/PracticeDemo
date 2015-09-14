@@ -1,4 +1,4 @@
-package yifeiyuan.practice.practicedemos.drager;
+package yifeiyuan.practice.practicedemos.viewdrager;
 
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;

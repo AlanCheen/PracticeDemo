@@ -30,6 +30,11 @@
     <string name="title_activity_toolbar">ToolbarActivity</string>
     <string name="title_activity_device_info_activty">DeviceInfoActivty</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_lambda">LambdaActivity</string>
+    <string name="title_activity_intent_one">IntentOneActivity</string>
+    <string name="title_activity_intent_two">IntentTwoActivity</string>
+    <string name="title_activity_sb_sample">SbSampleActivity</string>
+    <string name="title_activity_scheme">SchemeActivity</string>
 
 
 

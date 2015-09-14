@@ -1,4 +1,4 @@
-package yifeiyuan.practice.practicedemos.blur;
+package yifeiyuan.practice.practicedemos.fastblur;
 
 import android.graphics.Bitmap;
 
