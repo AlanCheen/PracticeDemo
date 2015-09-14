@@ -4,6 +4,8 @@ import rx.functions.Action1;
 
 /**
  * Created by alanchen on 15/9/14.
+ * 一般我的练习都会配有文章,可以去看看
+ * http://yifeiyuan.me/tags/RxJava/
  */
 public class RxMain {
 

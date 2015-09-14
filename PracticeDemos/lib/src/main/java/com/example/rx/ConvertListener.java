@@ -12,6 +12,7 @@ public class ConvertListener {
         void onValueChanged(String value);
     }
 
+    //这里就不写list保存了
     ValueUpdateListener mValueUpdateListener;
 
     public void setValue(String value) {
