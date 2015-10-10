@@ -10,33 +10,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a936817-6af9-417e-8205-25e05801bdcb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/mipmap-xxhdpi/pic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/blur/BlurActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/reveal/GoToRevealActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/reveal/RevealActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/reveal/RevealBackgroundView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/reveal/RevealView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_gauss_blur.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_go_to_reval.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_reval.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_gauss_blur.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_go_to_reval.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_message.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_reval.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/customview/CustomViewActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/DownloadService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/fir/Fir.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/lib/src/main/java/com/example/rx/RxScheduler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/lib/src/main/java/com/example/synchronized/ScynPratice.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/service/ServiceActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/touch/TouchActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_custom_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_service.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_touch.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/attrs_bezier_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/content_service.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/content_touch.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/sample_bezier_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values-v21/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/base/BaseActivity.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/base/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/BezierActivity.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/BezierActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/BezierEvaluator.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/BezierEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/FavorLayout.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/periscope/FavorLayout.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/broadcast/AppReceiver.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/broadcast/AppReceiver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/MainActivity.java" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/java/yifeiyuan/practice/practicedemos/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_periscope.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/layout/activity_periscope.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/app.iml" afterPath="$PROJECT_DIR$/PracticeDemos/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/build.gradle" afterPath="$PROJECT_DIR$/PracticeDemos/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/menu/menu_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/lib/src/main/java/com/example/rx/RxBase.java" afterPath="$PROJECT_DIR$/PracticeDemos/lib/src/main/java/com/example/rx/RxBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/lib/src/main/java/com/example/rx/RxOperators.java" afterPath="$PROJECT_DIR$/PracticeDemos/lib/src/main/java/com/example/rx/RxOperators.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/lib/build.gradle" afterPath="$PROJECT_DIR$/PracticeDemos/lib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/yutils/build.gradle" afterPath="$PROJECT_DIR$/PracticeDemos/yutils/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/lib/lib.iml" afterPath="$PROJECT_DIR$/PracticeDemos/lib/lib.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/PracticeDemos/app/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PracticeDemos/yutils/yutils.iml" afterPath="$PROJECT_DIR$/PracticeDemos/yutils/yutils.iml" />
     </list>
     <ignored path="PracticeDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +63,18 @@
     <favorites_list name="PracticeDemo" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3422222">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,8 +124,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -125,10 +134,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane />
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -148,6 +159,7 @@
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -162,7 +174,8 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
@@ -192,7 +205,8 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
@@ -217,6 +231,22 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -284,6 +314,7 @@
     <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="app" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -298,7 +329,8 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
@@ -331,6 +363,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9a936817-6af9-417e-8205-25e05801bdcb" name="Default" comment="" />
@@ -341,31 +376,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -378,5 +413,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3422222">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
