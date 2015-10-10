@@ -94,9 +94,8 @@ public class CanvasActivity extends AppCompatActivity {
             canvas.translate(10, 0);
             //填充整个canvas 画颜色 Notice 前面的translate对 drawARGB没有作用!!
             canvas.drawARGB(111, 156, 11, 44);
-
             // 画一个点
-//            canvas.drawPoint(10, 10, mPointPaint);
+            canvas.drawPoint(10, 10, mPointPaint);
 
             //X轴平移 50个像素
             canvas.translate(50, 0);
@@ -105,8 +104,14 @@ public class CanvasActivity extends AppCompatActivity {
             canvas.drawLine(0, 0, 0, 300, mLinePaint);
             canvas.drawLine(0, 300, 300, 300, mLinePaint);
             //绘制一个矩形
-            canvas.drawRect(mArcRectF, mRectFPaint);
-            canvas.drawRect(1, 2, 3, 4, mRectFPaint);
+//            canvas.drawRect(mArcRectF, mRectFPaint);
+//            canvas.drawRect(1, 2, 3, 4, mRectFPaint);
+
+//            canvas.translate(300, 0);
+//            canvas.drawRoundRect(mArcRectF,0,20,mRectFPaint);
+
+//            canvas.translate(300, 0);
+//            canvas.drawRoundRect(mArcRectF,50,70,mRectFPaint);
 
             //根据一个矩形绘制一个弧形
             //矩阵的中心为圆心,最短边为直径(内切圆)
@@ -136,14 +141,19 @@ public class CanvasActivity extends AppCompatActivity {
              */
             // 使用中心 则为弧形
             canvas.drawArc(mArcRectF, 90, 22, true, mArcPaint);
-//            // 不使用中心
+            // 不使用中心
             canvas.drawArc(mArcRectF, 122, 33, false, mArcPaint);
-//
+
+//            canvas.drawArc(1,1,1,1,2,2,false,mArcPaint);
+
+
 //            //只描边 默认fill(填充)
             mArcPaint.setStyle(Paint.Style.STROKE);
             canvas.drawArc(mArcRectF, 166, 44, true, mArcPaint);
 //
-            canvas.translate(305, 0);
+
+            canvas.restore();
+            canvas.translate(0, 300);
             //超过360°,则为一整个圆,即使useCenter为false
             mArcPaint.setStrokeWidth(20);
             mArcPaint.setStyle(Paint.Style.FILL_AND_STROKE);//什么鬼?貌似没什么效果
@@ -156,10 +166,16 @@ public class CanvasActivity extends AppCompatActivity {
             mCirclePaint.setStyle(Paint.Style.STROKE);
             canvas.drawRect(0, 0, 100, 100, mCirclePaint);
 
-            canvas.restore();
+            canvas.translate(400, 0);
+            mOvalRectF.set(0, 30, 267, 222);//椭圆
+            canvas.drawOval(mOvalRectF, mOvalPaint);
+//            canvas.drawOval(1, 1, 1, 1, mOvalPaint);
             canvas.translate(0, 300);
-            canvas.drawOval(mOvalRectF,mOvalPaint);
+            mOvalRectF.set(0, 0, 200, 200);//设置成正方形
+            canvas.drawOval(mOvalRectF, mOvalPaint);
 
+            canvas.translate(0, 300);
+            canvas.drawCircle(50, 50, 100, mOvalPaint);
         }
     }
 }
