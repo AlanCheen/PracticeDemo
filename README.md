@@ -63,6 +63,13 @@
 7. 新增**RxOperators**练习
 
 PS: 距离上次更新有一个月,很明显这次练习量变少了,那么我干什么去了呢?  
-一方面比较忙,另外一方面,开源了两个项目,需要继续开发.  
+一方面比较忙,另外一方面,写了两个异常简单的开源项目.  
 1. 用于捕获崩溃的[CrashCatcher](https://github.com/AlanCheen/CrashCatcher)  
 2. 基于Gank.io的第三方妹子客户端[GMei](https://github.com/AlanCheen/GMei)
+
+
+- 2015.10.10
+1. **IntentService**
+2. **Http下载文件**
+3. **Canvas绘制几何图形**
+4. **RxJavaSubscription**
