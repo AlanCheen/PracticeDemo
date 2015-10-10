@@ -29,18 +29,23 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import yifeiyuan.practice.practicedemos.base.AboutMeActivity;
 import yifeiyuan.practice.practicedemos.base.Practice;
+import yifeiyuan.practice.practicedemos.customview.CanvasActivity;
+import yifeiyuan.practice.practicedemos.customview.ClipActivity;
+import yifeiyuan.practice.practicedemos.customview.CustomViewActivity;
 import yifeiyuan.practice.practicedemos.fastblur.FastBlurActivity;
-import yifeiyuan.practice.practicedemos.viewdrager.SwipeBackActivity;
-import yifeiyuan.practice.practicedemos.viewdrager.ViewDragerActivity;
 import yifeiyuan.practice.practicedemos.info.DeviceInfoActivty;
 import yifeiyuan.practice.practicedemos.intent.IntentActivity;
+import yifeiyuan.practice.practicedemos.itemtouchhelper.TouchHelperActivity;
 import yifeiyuan.practice.practicedemos.jni.HelloJni;
 import yifeiyuan.practice.practicedemos.materialsupport.MaterialActivity;
 import yifeiyuan.practice.practicedemos.materialsupport.TextInputActivity;
 import yifeiyuan.practice.practicedemos.periscope.BezierActivity;
+import yifeiyuan.practice.practicedemos.recyclerview.HorizontalRvActivity;
 import yifeiyuan.practice.practicedemos.reveal.GoToRevealActivity;
 import yifeiyuan.practice.practicedemos.screenorientation.OrientationActivity;
-import yifeiyuan.practice.practicedemos.itemtouchhelper.TouchHelperActivity;
+import yifeiyuan.practice.practicedemos.service.ServiceActivity;
+import yifeiyuan.practice.practicedemos.viewdrager.SwipeBackActivity;
+import yifeiyuan.practice.practicedemos.viewdrager.ViewDragerActivity;
 import yifeiyuan.practice.practicedemos.webview.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -79,7 +84,13 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
 
         mPractices = new ArrayList<>();
+        mPractices.add(new Practice("RankImageView", new Intent(mContext, CustomViewActivity.class)));
+        mPractices.add(new Practice("Canvas裁剪", new Intent(mContext, ClipActivity.class)));
+        mPractices.add(new Practice("Canvas基础绘画", new Intent(mContext, CanvasActivity.class)));
+
+
         mPractices.add(new Practice("Periscope点赞效果", new Intent(mContext, BezierActivity.class)));
+
         mPractices.add(new Practice("Fastblur", new Intent(mContext, FastBlurActivity.class)));
         mPractices.add(new Practice("RevealEffect", new Intent(mContext, GoToRevealActivity.class)));
 //        mPractices.add(new Practice("Wave", new Intent(mContext, WaveActivity.class)));
@@ -92,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
         mPractices.add(new Practice("TextInput", new Intent(mContext, TextInputActivity.class)));
         mPractices.add(new Practice("设备信息", new Intent(mContext, DeviceInfoActivty.class)));
         mPractices.add(new Practice("Android基础之Intent", new Intent(mContext, IntentActivity.class)));
+        mPractices.add(new Practice("IntentService", new Intent(mContext, ServiceActivity.class)));
+        mPractices.add(new Practice("水平的RecyclerView", new Intent(mContext, HorizontalRvActivity.class)));
 
     }
 

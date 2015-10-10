@@ -1,6 +1,7 @@
 package com.example.rx;
 
 import rx.Observable;
+import rx.Observer;
 import rx.Subscriber;
 import rx.functions.Action0;
 import rx.functions.Action1;
@@ -74,7 +75,7 @@ public class RxBase {
 
     public static void main(String[] args) {
 
-//        mStringObservable.subscribe(mStringSubscriber);//执行后 输出 Hello Rxjava   onCompleted
+        mStringObservable.subscribe(mStringSubscriber);//执行后 输出 Hello Rxjava   onCompleted
 //
 //        simpleObservable.subscribe(mStringSubscriber);//执行后 输出 Hell,simple observable  onCompleted
 //
@@ -84,12 +85,43 @@ public class RxBase {
         mStringObservable.subscribe(onNextAction, onErrorAction, onCompleteAction);
 //
 //
-        Observable.just("Hello simple onaction1").subscribe(new Action1<String>() {
+        Observer observer = new Observer() {
             @Override
-            public void call(String s) {
-                System.out.println(s);
-            }
-        });
+            public void onCompleted() {
 
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(Object o) {
+
+            }
+
+        };
+        Subscriber<String> subscriber = new Subscriber<String>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(String s) {
+
+            }
+
+            @Override
+            public void onStart() {
+                super.onStart();
+            }
+        };
     }
 }

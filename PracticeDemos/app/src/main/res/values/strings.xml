@@ -35,6 +35,11 @@
     <string name="title_activity_intent_two">IntentTwoActivity</string>
     <string name="title_activity_sb_sample">SbSampleActivity</string>
     <string name="title_activity_scheme">SchemeActivity</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="title_activity_touch">TouchActivity</string>
+    <string name="title_activity_facebook">FacebookActivity</string>
+    <string name="title_activity_horizontal_rv">HorizontalRvActivity</string>
+    <string name="title_activity_clip">ClipActivity</string>
 
 
 

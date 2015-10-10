@@ -7,6 +7,8 @@ import android.util.Log;
 
 /**
  * Created by alanchen on 15/9/14.
+ *
+ * 监听别的应用的安装和卸载
  */
 public class AppReceiver extends BroadcastReceiver{
 

@@ -7,5 +7,7 @@
     <!-- FloatingActionButton 的bug 如果用snackbar 不设置bottom right Fab不会自己回归位置-->
     <dimen name="fab_margin_right">0.1dp</dimen>
     <dimen name="fab_margin_bottom">0.1dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

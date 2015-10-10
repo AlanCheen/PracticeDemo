@@ -27,7 +27,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="rxjava-1.0.12" level="project" />
+    <orderEntry type="library" exported="" name="rxjava-1.0.13" level="project" />
     <orderEntry type="library" exported="" name="lib.lib" level="project" />
   </component>
 </module>

@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,8 +74,8 @@ public class ListFragment extends BaseFragment {
 
     public static class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> implements View.OnClickListener{
 
-        private final TypedValue mTypedValue = new TypedValue();
-        private int mBackground;
+//        private final TypedValue mTypedValue = new TypedValue();
+//        private int mBackground;
         private Context mContext;
         private List<String>mDatas;
         public ListAdapter(Context context,List<String> data){
