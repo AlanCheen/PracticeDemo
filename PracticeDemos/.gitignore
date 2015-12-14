@@ -5,3 +5,6 @@
 .DS_Store
 /build
 /captures
+/fabric.properties
+.idea
+/.idea
