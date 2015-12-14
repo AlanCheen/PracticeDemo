@@ -31,9 +31,7 @@
                 android:layout_height="match_parent"
                 android:src="@mipmap/pic"
                 app:layout_collapseParallaxMultiplier="0.8"
-                >
-
-            </com.flaviofaria.kenburnsview.KenBurnsView>
+                />
 
             <!--Notice 这个会影响 下拉响应 android:minHeight="?attr/actionBarSize"-->
             <!--设置了minHeight后 下滑minHeight后才会被下拉 -->

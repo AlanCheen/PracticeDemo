@@ -1,98 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="yifeiyuan.practice.practicedemos" >
+<manifest package="yifeiyuan.practice.practicedemos"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
-        xmlns:tools="http://schemas.android.com/tools"
         android:name=".App"
+        xmlns:tools="http://schemas.android.com/tools"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        tools:replace="android:label,theme" >
+        tools:replace="android:label,theme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
-        <activity android:name=".periscope.BezierActivity" />
-        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".periscope.BezierActivity"/>
+        <activity android:name=".base.BaseActivity"/>
         <activity
             android:name=".fastblur.FastBlurActivity"
-            android:label="@string/title_activity_gauss_blur" />
+            android:label="@string/title_activity_gauss_blur"/>
         <activity
             android:name=".reveal.RevealActivity"
-            android:label="@string/title_activity_reval" />
+            android:label="@string/title_activity_reval"/>
         <activity
             android:name=".reveal.GoToRevealActivity"
-            android:label="@string/title_activity_go_to_reval" />
+            android:label="@string/title_activity_go_to_reval"/>
         <activity
             android:name=".wave.WaveActivity"
-            android:label="@string/title_activity_wave" />
+            android:label="@string/title_activity_wave"/>
         <activity
             android:name=".LaunchActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:label="@string/app_name">
         </activity>
         <activity
             android:name=".viewdrager.ViewDragerActivity"
-            android:label="@string/title_activity_view_drager" >
+            android:label="@string/title_activity_view_drager">
         </activity>
         <activity
             android:name=".screenorientation.OrientationActivity"
             android:configChanges="screenSize|orientation"
             android:label="@string/title_activity_config"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".webview.WebViewActivity"
-            android:label="@string/title_activity_web_view" >
+            android:label="@string/title_activity_web_view">
         </activity>
         <activity
             android:name=".materialsupport.MaterialActivity"
-            android:label="@string/title_activity_material" >
+            android:label="@string/title_activity_material">
         </activity>
         <activity
             android:name=".viewdrager.SwipeBackActivity"
-            android:label="@string/title_activity_swipe_back" >
+            android:label="@string/title_activity_swipe_back">
         </activity>
         <activity
             android:name=".itemtouchhelper.TouchHelperActivity"
-            android:label="@string/title_activity_swipe_dismiss" >
+            android:label="@string/title_activity_swipe_dismiss">
         </activity>
         <activity
             android:name=".base.AboutMeActivity"
-            android:label="@string/title_activity_show_case" >
+            android:label="@string/title_activity_show_case">
         </activity>
         <activity
             android:name=".materialsupport.TextInputActivity"
-            android:label="@string/title_activity_text_input" >
+            android:label="@string/title_activity_text_input">
         </activity>
         <activity
             android:name=".base.ToolbarActivity"
-            android:label="@string/title_activity_toolbar" >
+            android:label="@string/title_activity_toolbar">
         </activity>
         <activity
             android:name=".info.DeviceInfoActivty"
-            android:label="@string/title_activity_device_info_activty" >
+            android:label="@string/title_activity_device_info_activty">
         </activity>
         <activity
             android:name=".intent.IntentActivity"
-            android:label="@string/title_activity_intent_one" >
+            android:label="@string/title_activity_intent_one">
         </activity>
         <activity
             android:name=".intent.SchemeHPActivity"
-            android:label="@string/title_activity_intent_two" >
+            android:label="@string/title_activity_intent_two">
 
             <!-- 如果都指定了,那么就需要完全匹配 scheme://host:port -->
             <!-- yifeiyuan://practice.practicedemos:1314 -->
@@ -100,71 +101,154 @@
                 <data
                     android:host="practice.practicedemos"
                     android:port="1314"
-                    android:scheme="yifeiyuan" />
+                    android:scheme="yifeiyuan"/>
 
-                <action android:name="yifeiyuan.practice.test" />
+                <action android:name="yifeiyuan.practice.test"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".intent.SchemeActivity"
-            android:label="@string/title_activity_scheme" >
+            android:label="@string/title_activity_scheme">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.VIEW"/>
 
-                <data android:scheme="yifeiyuan" />
+                <data android:scheme="yifeiyuan"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <!-- <category android:name="android.intent.category.APP_BROWSER"/> -->
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!-- <category android:bookName="android.intent.category.APP_BROWSER"/> -->
             </intent-filter>
         </activity>
 
-        <receiver android:name=".broadcast.AppReceiver" >
+        <receiver android:name=".broadcast.AppReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
-                <action android:name="android.intent.action.PACKAGE_REPLACED" />
-                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
 
-                <data android:scheme="package" />
+                <data android:scheme="package"/>
             </intent-filter>
         </receiver>
 
         <service
             android:name=".DownloadService"
             android:enabled="true"
-            android:exported="true" >
+            android:exported="true">
         </service>
 
         <activity
             android:name=".service.ServiceActivity"
             android:label="@string/title_activity_service"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
             android:name=".touch.TouchActivity"
             android:label="@string/title_activity_touch"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".customview.CustomViewActivity" >
+        <activity android:name=".customview.CustomViewAndGroupActivity">
         </activity>
         <activity
             android:name=".thirdparty.FacebookActivity"
             android:label="@string/title_activity_facebook"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".recyclerview.HorizontalRvActivity"
             android:label="@string/title_activity_horizontal_rv"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".customview.ClipActivity"
             android:label="@string/title_activity_clip"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme">
         </activity>
-        <activity android:name=".customview.CanvasActivity" >
+        <activity android:name=".customview.CanvasActivity">
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561c578367e58eb34f001599"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="aa0e278f9f819f16dc5d7d466abece171d92d3cc"/>
+
+        <activity
+            android:name=".thirdparty.TwitterActivity"
+            android:label="@string/title_activity_twitter"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".window.FloatingWindowActivity"
+            android:label="@string/title_activity_floating_window"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".surfaceview.GlsurfaceActivity"
+            android:label="@string/title_activity_glsurface"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
+        <activity
+            android:name=".ui.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings">
+        </activity>
+        <activity android:name=".ui.UIOneActivity">
+        </activity>
+        <activity android:name=".ui.ViewPagerActivity">
+        </activity>
+        <activity
+            android:name=".camera.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".customview.SwitchActivity"
+            android:label="@string/title_activity_switch"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".customview.PathActivity"
+            android:label="@string/title_activity_path"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".intent.LaunchmodeActivity"
+            android:label="@string/title_activity_launchmode"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".intent.AffinityActivityC"
+            android:label="@string/title_activity_affinity_activity_c"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".intent.AffinityActivityD"
+            android:label="@string/title_activity_affinity_activity_d"
+            android:theme="@style/AppTheme">
+        </activity>
+        <!-- android:taskAffinity="affinity" -->
+
+        <activity
+            android:name=".RVDemo"
+            android:label="@string/title_activity_rvdemo"
+            android:theme="@style/AppTheme">
         </activity>
     </application>
 

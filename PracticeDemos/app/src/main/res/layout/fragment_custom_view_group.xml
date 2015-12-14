@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="yifeiyuan.practice.practicedemos.customview.CustomViewGroupFragment">
+
+    <yifeiyuan.practice.practicedemos.customview.MyViewGroup
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="#88ff33"
+            android:text="我只是个TextView"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:background="#333333"
+            />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:text="Hello,ViewGroup"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ee00ee"
+            android:text="Hello,MatchParent"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#44ff33"
+            android:text="Hello,MatchParent"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ff00ff"
+            android:text="Hello,MatchParent"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="#000000"
+            />
+
+    </yifeiyuan.practice.practicedemos.customview.MyViewGroup>
+
+</LinearLayout>

@@ -12,6 +12,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,9 +30,11 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import yifeiyuan.practice.practicedemos.base.AboutMeActivity;
 import yifeiyuan.practice.practicedemos.base.Practice;
+import yifeiyuan.practice.practicedemos.camera.CameraActivity;
 import yifeiyuan.practice.practicedemos.customview.CanvasActivity;
 import yifeiyuan.practice.practicedemos.customview.ClipActivity;
-import yifeiyuan.practice.practicedemos.customview.CustomViewActivity;
+import yifeiyuan.practice.practicedemos.customview.CustomViewAndGroupActivity;
+import yifeiyuan.practice.practicedemos.customview.SwitchActivity;
 import yifeiyuan.practice.practicedemos.fastblur.FastBlurActivity;
 import yifeiyuan.practice.practicedemos.info.DeviceInfoActivty;
 import yifeiyuan.practice.practicedemos.intent.IntentActivity;
@@ -44,10 +47,19 @@ import yifeiyuan.practice.practicedemos.recyclerview.HorizontalRvActivity;
 import yifeiyuan.practice.practicedemos.reveal.GoToRevealActivity;
 import yifeiyuan.practice.practicedemos.screenorientation.OrientationActivity;
 import yifeiyuan.practice.practicedemos.service.ServiceActivity;
+import yifeiyuan.practice.practicedemos.surfaceview.GlsurfaceActivity;
+import yifeiyuan.practice.practicedemos.thirdparty.FacebookActivity;
+import yifeiyuan.practice.practicedemos.thirdparty.TwitterActivity;
+import yifeiyuan.practice.practicedemos.touch.TouchActivity;
+import yifeiyuan.practice.practicedemos.ui.ScrollingActivity;
+import yifeiyuan.practice.practicedemos.ui.SettingsActivity;
+import yifeiyuan.practice.practicedemos.ui.UIOneActivity;
+import yifeiyuan.practice.practicedemos.ui.ViewPagerActivity;
 import yifeiyuan.practice.practicedemos.viewdrager.SwipeBackActivity;
 import yifeiyuan.practice.practicedemos.viewdrager.ViewDragerActivity;
 import yifeiyuan.practice.practicedemos.webview.WebViewActivity;
-
+import yifeiyuan.practice.practicedemos.window.FloatingWindowActivity;
+//// TODO: 15/10/30 http://stackoverflow.com/questions/26440879/how-do-i-use-drawerlayout-to-display-over-the-actionbar-toolbar-and-under-the-st
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MainActivity";
@@ -74,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.inject(this);
 
+        Log.d(TAG, "onCreate: ");
+
         mContext = this;
         initData();
         setupListView();
@@ -84,10 +98,36 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
 
         mPractices = new ArrayList<>();
-        mPractices.add(new Practice("RankImageView", new Intent(mContext, CustomViewActivity.class)));
+
+
+        mPractices.add(new Practice("ActivityLaunchMode", new Intent(mContext, SwitchActivity.class)));
+
+        mPractices.add(new Practice("FaceView", new Intent(mContext, SwitchActivity.class)));
+
+        mPractices.add(new Practice("Camera5.1.1", new Intent(mContext, CameraActivity.class)));
+
+        mPractices.add(new Practice("Facebook 分享", new Intent(mContext, FacebookActivity.class)));
+
+        mPractices.add(new Practice("Touch事件分发", new Intent(mContext, TouchActivity.class)));
+
+        mPractices.add(new Practice("ViewPager 效果 1", new Intent(mContext, ViewPagerActivity.class)));
+        mPractices.add(new Practice("UI效果 one ", new Intent(mContext, UIOneActivity.class)));
+
+        mPractices.add(new Practice("Material Setting ", new Intent(mContext, SettingsActivity.class)));
+
+        mPractices.add(new Practice("Material Scrolling ", new Intent(mContext, ScrollingActivity.class)));
+
+        mPractices.add(new Practice("Service学习 ", new Intent(mContext, ServiceActivity.class)));
+
+        mPractices.add(new Practice("GLSurfaceView ", new Intent(mContext, GlsurfaceActivity.class)));
+
+        mPractices.add(new Practice("悬浮窗.", new Intent(mContext, FloatingWindowActivity.class)));
+
+        mPractices.add(new Practice("自定义ViewAndViewGroup", new Intent(mContext, CustomViewAndGroupActivity.class)));
+
+        mPractices.add(new Practice("Twitter Login", new Intent(mContext, TwitterActivity.class)));
         mPractices.add(new Practice("Canvas裁剪", new Intent(mContext, ClipActivity.class)));
         mPractices.add(new Practice("Canvas基础绘画", new Intent(mContext, CanvasActivity.class)));
-
 
         mPractices.add(new Practice("Periscope点赞效果", new Intent(mContext, BezierActivity.class)));
 
@@ -106,6 +146,52 @@ public class MainActivity extends AppCompatActivity {
         mPractices.add(new Practice("IntentService", new Intent(mContext, ServiceActivity.class)));
         mPractices.add(new Practice("水平的RecyclerView", new Intent(mContext, HorizontalRvActivity.class)));
 
+    }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause: ");
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);//Notice  如果这个注释 那么就保存不了view的一些状态 比如滚动到了哪里,侧边栏是否打开
+        Log.d(TAG, "onSaveInstanceState: ");
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop: ");
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart: ");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart: ");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume: ");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.d(TAG, "onRestoreInstanceState: ");
     }
 
     private void setupListView(){
@@ -133,15 +219,15 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (menuItem.getItemId()) {
                     case R.id.github:
-                        startActivity(WebViewActivity.start(MainActivity.this,Const.URL_GITHUB));
+                        startActivity(WebViewActivity.start(MainActivity.this, Const.URL_GITHUB));
                         break;
 
                     case R.id.jianshu:
-                        startActivity(WebViewActivity.start(MainActivity.this,Const.URL_JIANSHU));
+                        startActivity(WebViewActivity.start(MainActivity.this, Const.URL_JIANSHU));
                         break;
 
                     case R.id.sina:
-                        startActivity(WebViewActivity.start(MainActivity.this,Const.URL_SINA));
+                        startActivity(WebViewActivity.start(MainActivity.this, Const.URL_SINA));
                         break;
 
                     case R.id.menu_about:
@@ -157,6 +243,9 @@ public class MainActivity extends AppCompatActivity {
         };
         mDrawerToggle.syncState();
         mDrawer.setDrawerListener(mDrawerToggle);
+
+//        mDrawer.setStatusBarBackgroundColor(getResources().getColor(R.color.white));
+
     }
 
     private void setupToolbar(){

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:layerType="software"
+    tools:context="yifeiyuan.practice.practicedemos.ui.ViewPagerActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:clipChildren="false"
+        >
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

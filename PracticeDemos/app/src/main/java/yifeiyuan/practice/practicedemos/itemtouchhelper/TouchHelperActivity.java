@@ -15,14 +15,11 @@ import yifeiyuan.practice.practicedemos.base.ToolbarActivity;
  */
 public class TouchHelperActivity extends ToolbarActivity {
 
-
-//    SwipeDismissListFragment swipeDismissListFragment;
     SimpleSwipedismissFragment simpleSwipedismissFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipe_dismiss);
-//        swipeDismissListFragment = new SwipeDismissListFragment();
         simpleSwipedismissFragment = new SimpleSwipedismissFragment();
 
         getSupportFragmentManager().beginTransaction().add(R.id.container,simpleSwipedismissFragment).commit();

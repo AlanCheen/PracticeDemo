@@ -1,27 +1,27 @@
-package com.example.synchronize;
+package com.example.concurrent.synchronize;
 
 /**
  * Created by alanchen on 15/9/23.
  *
  * 练习 synchronized (String.class){}这种写法
  */
-public class SyncClass {
+public class SyncThis {
 
-    static void prtb() throws InterruptedException {
-        synchronized (String.class){
-            System.out.println("SyncClass:这个是B");
+    void prtb() throws InterruptedException {
+        synchronized (this){
+            System.out.println("SyncThis:这个是B");
             Thread.sleep(2000);
         }
     }
-    static void prta() throws InterruptedException {
-        synchronized (String.class) {
-            System.out.println("SyncClass:这个是A");
+    void prta() throws InterruptedException {
+        synchronized (this) {
+            System.out.println("SyncThis:这个是A");
             Thread.sleep(2000);
         }
     }
 
-    static void prtc() {
-        System.out.println("SyncClass:这个是C");
+    void prtc() {
+        System.out.println("SyncThis:这个是C");
     }
 
     /**
@@ -31,7 +31,7 @@ public class SyncClass {
      过两秒后
      SyncClass:这个是B
      */
-    public static void test() {
+    public void test() {
         new Thread(new Runnable() {
             @Override
             public void run() {

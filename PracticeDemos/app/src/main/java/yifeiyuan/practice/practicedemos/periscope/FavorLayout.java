@@ -44,6 +44,8 @@ public class FavorLayout extends RelativeLayout{
 
     public FavorLayout(Context context) {
         super(context);
+        setBackgroundColor(getResources().getColor(R.color.bg));
+        init();
     }
 
     public FavorLayout(Context context, AttributeSet attrs) {

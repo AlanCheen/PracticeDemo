@@ -43,8 +43,6 @@
         app:fabSize="normal"
         android:src="@mipmap/ic_done"
         android:layout_gravity="bottom|right"
-        android:layout_marginBottom="@dimen/fab_margin_bottom"
-        android:layout_marginRight="@dimen/fab_margin_right"
         app:elevation="6dp"
         app:borderWidth="0dp"
         />

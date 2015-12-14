@@ -21,7 +21,6 @@ import yifeiyuan.practice.practicedemos.R;
 import yifeiyuan.practice.practicedemos.base.BaseFragment;
 
 /**
- *
  */
 public class SimpleSwipedismissFragment extends BaseFragment {
 

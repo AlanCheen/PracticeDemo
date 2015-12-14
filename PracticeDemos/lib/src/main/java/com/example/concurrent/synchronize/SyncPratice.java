@@ -1,4 +1,4 @@
-package com.example.synchronize;
+package com.example.concurrent.synchronize;
 
 /**
  * Created by alanchen on 15/9/23.

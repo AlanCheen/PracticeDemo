@@ -92,9 +92,10 @@ public class DownloadService extends IntentService {
         Log.d(TAG, "onStart() called with: " + "intent = [" + intent + "], startId = [" + startId + "]");
     }
 
+    // onStartCommand 里调用了onstart
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.d(TAG, "onStartCommand() called with: " + "intent = [" + intent + "], flags = [" + flags + "], startId = [" + startId + "]");
+        Log.d(TAG, "onStartCommand() called with: " + "flags = [" + flags + "], startId = [" + startId + "]");
         return super.onStartCommand(intent, flags, startId);
     }
 

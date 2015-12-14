@@ -1,7 +1,5 @@
 package com.example;
 
-import com.example.http.HttpTest;
-
 public class MyClass {
 
     public static void main(String[] args) {
@@ -16,15 +14,20 @@ public class MyClass {
 //        System.out.println("" + System.currentTimeMillis());
 
 //        new Thread(()-> System.out.printf("")).start();
-        for (int i = 0; i < 50; i++) {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    HttpTest.hehe();
-                }
-            }).start();
-        }
+//        for (int i = 0; i < 50; i++) {
+//            new Thread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    HttpTest.hehe();
+//                }
+//            }).start();
+//        }
 
+
+        String baseUrk = "https://api.twitter.com/1.1/users/show.json?screen_name=%1$s&user_id=%2$s";
+        String result111 = String.format(baseUrk, "aaa", "2323");
+
+        System.out.println(result111);
     }
 
 

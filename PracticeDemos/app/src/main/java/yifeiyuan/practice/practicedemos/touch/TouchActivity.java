@@ -5,11 +5,15 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 
 import yifeiyuan.practice.practicedemos.R;
 
 public class TouchActivity extends AppCompatActivity {
+
+    public static String TAG = "Touch";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,21 @@ public class TouchActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.d(TAG, " TouchActivity  dispatchTouchEvent() called with: " + "ev = [" + TouchUtil.getAction(ev) + "]");
+        return super.dispatchTouchEvent(ev);
+//        return true;
+    }
+
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        Log.d(TAG, " TouchActivity  onTouchEvent() called with: " + "event = [" + TouchUtil.getAction(event) + "]");
+        return super.onTouchEvent(event);
     }
 
 }
