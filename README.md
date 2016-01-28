@@ -1,3 +1,8 @@
+
+# DEPRECATED
+
+该项目已经包含了太多太多难搞的东西,比如NDK,Twitter..难以编译,且耦合度高的吓死宝宝了,so,废弃啦!~
+
 # PracticeDemo
 
 因我写了 [一步一步教你实现Periscope点赞效果](http://www.jianshu.com/p/03fdcfd3ae9c) 一文,有同学留言要代码,so建了这个库

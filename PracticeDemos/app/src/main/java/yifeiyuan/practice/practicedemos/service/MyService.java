@@ -58,6 +58,7 @@ public class MyService extends Service {
     @Override
     public boolean onUnbind(Intent intent) {
         Log.d(TAG, "onUnbind: ");
+        //返回true则会走onReBind
         return super.onUnbind(intent);
     }
 
