@@ -19,12 +19,12 @@
 [我的新浪微博](http://weibo.com/alancheeen/profile?rightmod=1&wvr=6&mod=personinfo)
 
 
-##Apk 下载
+## Apk 下载
 [网页下载地址](http://fir.im/p3jf)
 
 
 
-##更新日志:
+## 更新日志:
 
 - 2015.6.22:
 
